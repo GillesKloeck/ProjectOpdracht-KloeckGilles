@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ballenbak</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+F+7P1iIi0qfi88Yk1n4q4V0i6kYqMxW8aPYbS+30="
+    crossorigin=""/>
+</head>
+<body>
+  <nav>
+        <div class="logo">Ballenbak</div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  <main class="contact-page">
+    <h1>Contacteer ons</h1>
+
+    <div class="contact-container">
+      <form class="contact-form">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" placeholder="voorbeeld@domein.com" required>
+
+        <label for="recipient">Contactpersoon:</label>
+        <select id="recipient" name="recipient" required>
+          <option value="">-- Kies een optie --</option>
+          <option value="webdesigner">Websitebouwer</option>
+          <option value="manager">Verantwoordelijke webshop</option>
+        </select>
+
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" rows="6" placeholder="Typ hier je vraag..." required></textarea>
+
+        <button type="submit" class="button submit">Verstuur</button>
+      </form>
+
+      <div id="map"></div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j6b+j0p3k2D4g/2OqHOSkX2Pv8szHvdT2e8H9oM="
+    crossorigin=""></script>
+
+  <script src="/js/contact.js"></script>
+</body>
+</html>

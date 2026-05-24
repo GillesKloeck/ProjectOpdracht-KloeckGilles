@@ -1,0 +1,77 @@
+body {
+margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #d8eefe;
+    color: #0f172a;
+    max-width: 1440px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #1e88e5; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1565c0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  .search-bar {
+    flex: 1;
+    margin-left: 20px;
+  }
+}

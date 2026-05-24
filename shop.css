@@ -1,0 +1,141 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d8eefe;
+  color: #0f172a;
+}
+
+.sidebar {
+  width: 90%;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.sidebar section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.products {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  padding: 12px;
+  position: relative;
+}
+
+.product-info h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.product-info p {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+}
+
+.product-info .button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.product-info .cart {
+  background-color: #1e88e5;
+}
+
+.product-info .cart:hover {
+  background-color: #1565c0;
+}
+
+.product-info .wishlist {
+  background-color: #e91e63;
+}
+
+.product-info .wishlist:hover {
+  background-color: #b0003a;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.sidebar li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e53935;
+  font-weight: bold;
+}
+
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    flex: 1;
+    margin: 0;
+  }
+
+  .products {
+    flex: 3;
+    max-width: none;
+  }
+
+  .product-card {
+    flex: 1 1 calc((100% - 40px) / 3);
+    min-width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
